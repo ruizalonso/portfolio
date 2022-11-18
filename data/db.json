@@ -1,0 +1,160 @@
+{
+  "data": {
+    "profileData": {
+      "id": 1,
+      "name": "Jhonatan",
+      "rol": "Full Stack Developer",
+      "description": "+2 years of experience as a Full Stack Developer. I participate in creating high-performance innovative products and solutions.",
+      "complement": "I teach and learn in my teams, and I like to bring ideas and solve problems."
+    },
+    "experience": [
+      {
+        "rol": "Junior Applications Developer",
+        "company": "Teleperformance",
+        "dateStart": "Ene. 2022",
+        "dateEnd": null,
+        "stack": [
+          "JavaScript",
+          "Node.js",
+          ".NET Framework",
+          "C#",
+          "SQL Server",
+          "React",
+          "Angular",
+          "Metodologías ágiles SCRUM",
+          "Git",
+          "Azure Cloud"
+        ],
+        "responsabilities": [
+          "Analyzing requirements, user stories and epics",
+          "Design and data modeling",
+          "Develop and document web applications, REST APIs and Microservices for enterprise and customer solutions"
+        ]
+      },
+      {
+        "rol": "Frontend Developer",
+        "company": "Equal Tech",
+        "dateStart": "Ene. 2021",
+        "dateEnd": "Ene. 2022",
+        "stack": [
+          ".NET Framework",
+          "ASP.NET MVC 5",
+          "C#",
+          "SQL Server",
+          "JavaScript",
+          "JQuery",
+          "Git"
+        ],
+        "responsabilities": [
+          "Requirements capture and analysis",
+          "Design and data modeling",
+          "Develop and document ERP web applications"
+        ]
+      }
+    ],
+    "hardSkills": [
+      {
+        "id": 1,
+        "img": "angu",
+        "name": "Node.js",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 2,
+        "img": "angu",
+        "name": "JavaScript",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 3,
+        "img": "angu",
+        "name": "TypeScript",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 4,
+        "img": "../../assets/img/icons/angular.svg",
+        "name": "Angular",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 5,
+        "img": "angu",
+        "name": "React.js",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 6,
+        "img": "angu",
+        "name": ".NET Framework",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 7,
+        "img": "angu",
+        "name": "C#",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 8,
+        "img": "angu",
+        "name": "SQL Server",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 9,
+        "img": "angu",
+        "name": "MySQL",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 10,
+        "img": "angu",
+        "name": "Postgre",
+        "icon": "DiNodejs"
+      },
+      {
+        "id": 11,
+        "img": "angu",
+        "name": "Mongodb",
+        "icon": "DiNodejs"
+      }
+    ],
+    "softSkills": [
+      {
+        "id": 1,
+        "name": "Responsibility"
+      },
+      {
+        "id": 2,
+        "name": "Teamwork"
+      },
+      {
+        "id": 3,
+        "name": "Commitment"
+      },
+      {
+        "id": 4,
+        "name": "Creativity"
+      },
+      {
+        "id": 5,
+        "name": "Assertive communication"
+      },
+      {
+        "id": 6,
+        "name": "Adaptation to changes"
+      }
+    ],
+    "contact": {
+      "github": {
+        "url": "https://github.com/ruizalonso",
+        "username": "ruizalonso"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/jhonatan-adri%C3%A1n-ruiz-alonso-541a791ab/",
+        "username": "Jhonatan Ruiz Alonso"
+      }
+    }
+  }
+}
