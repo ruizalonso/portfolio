@@ -1,44 +1,21 @@
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Flex,
   useColorModeValue,
   Text,
-  VisuallyHidden,
-  Image
+  Image,
 } from '@chakra-ui/react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import logo from '../../../assets/img/logo/logo-3.png'
+import { SocialMedia } from '../SocialMedia/SocialMedia'
 
-const SocialButton = ({ children, label, href }) => {
+export const Footer = () => {
   return (
-    <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-      rounded={'full'}
-      w={8}
-      h={8}
-      cursor={'pointer'}
-      as={'a'}
-      href={href}
-      display={'inline-flex'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      transition={'background 0.3s ease'}
-      _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}
+    <Box
+      py={10}
+      bgGradient="linear(purple.900 20%, gray.800 80%, gray.800 20%)"
     >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </chakra.button>
-  )
-}
-
-export default function LargeWithLogoCentered() {
-  return (
-    <Box py={10} bgGradient='linear(purple.900 20%, gray.800 80%, gray.800 20%)'>
       <Flex
         align={'center'}
         _before={{
@@ -68,14 +45,7 @@ export default function LargeWithLogoCentered() {
         align={{ base: 'center', md: 'center' }}
       >
         <Text>Made with ❤️ by. Jhonatan Ruiz</Text>
-        <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Github'} href={'#'}>
-            <FaGithub />
-          </SocialButton>
-          <SocialButton label={'Linkedin'} href={'#'}>
-            <FaLinkedin />
-          </SocialButton>
-        </Stack>
+        <SocialMedia />
       </Container>
     </Box>
   )

@@ -4,16 +4,16 @@ import {
   HStack,
   Link,
   IconButton,
-  Button,
   useDisclosure,
   useColorModeValue,
   Stack,
   Image,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon, ArrowRightIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { SocialMedia } from '../SocialMedia/SocialMedia'
 import logo from '../../../assets/img/logo/logo-2.png'
 
-const Links = ['Dashboard', 'Projects', 'Team']
+const Links = ['Home', 'Skills', 'Projects']
 const NavLink = ({ children }) => (
   <Link
     px={2}
@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} >
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -61,25 +61,7 @@ export default function Navbar() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <Button
-              display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'gray.700'}
-              href={'#'}
-              _hover={{
-                bg: 'gray.600',
-              }}
-            >
-              Sign Up
-            </Button>
-            <IconButton
-              display={{ base: 'inline-flex', md: 'none' }}
-              size={'md'}
-              icon={<ArrowRightIcon />}
-              aria-label={'Login'}
-            />
+            <SocialMedia />
           </Flex>
         </Flex>
 

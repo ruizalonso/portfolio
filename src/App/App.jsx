@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Shared/Navbar/Navbar'
-import Footer from '../components/Shared/Footer/Footer'
+import { Footer } from '../components/Shared/Footer/Footer'
 import Home from '../components/Home/Home'
 import AppContext from './AppContext'
 import useData from '../hooks/data'

@@ -3,32 +3,72 @@
     "profileData": {
       "id": 1,
       "name": "Jhonatan",
-      "rol": "Full Stack Developer",
+      "rol": "Backend & Full Stack Developer",
       "description": "+2 years of experience as a Full Stack Developer. I participate in creating high-performance innovative products and solutions.",
       "complement": "I teach and learn in my teams, and I like to bring ideas and solve problems."
     },
     "experience": [
       {
-        "rol": "Junior Applications Developer",
+        "rol": "Applications Developer",
         "company": "Teleperformance",
         "dateStart": "Ene. 2022",
         "dateEnd": null,
         "stack": [
-          "JavaScript",
-          "Node.js",
-          ".NET Framework",
-          "C#",
-          "SQL Server",
-          "React",
-          "Angular",
-          "Metodologías ágiles SCRUM",
-          "Git",
-          "Azure Cloud"
+          {
+            "name": "JavaScript",
+            "icon": "DiJsBadge",
+            "color": "yellow.400"
+          },
+          {
+            "name": "Node.js",
+            "icon": "DiNodejsSmall",
+            "color": "green.400"
+          },
+          {
+            "name": ".NET Framework",
+            "icon": "DiDotnet",
+            "color": "purple.400"
+          },
+          {
+            "name": "C#",
+            "icon": "DiDotnet",
+            "color": "purple.400"
+          },
+          {
+            "name": "SQL Server",
+            "icon": "DiMsqlServer",
+            "color": "red.400"
+          },
+          {
+            "name": "React.js",
+            "icon": "DiReact",
+            "color": "blue.400"
+          },
+          {
+            "name": "Angular",
+            "icon": "DiAngularSimple",
+            "color": "red.400"
+          },
+          {
+            "name": "Metodologías ágiles SCRUM",
+            "icon": "DiScrum",
+            "color": "white.400"
+          },
+          {
+            "name": "Git",
+            "icon": "DiGit",
+            "color": "orange.400"
+          },
+          {
+            "name": "Azure Cloud",
+            "icon": "DiWindows",
+            "color": "blue.400"
+          }
         ],
         "responsabilities": [
-          "Analyzing requirements, user stories and epics",
-          "Design and data modeling",
-          "Develop and document web applications, REST APIs and Microservices for enterprise and customer solutions"
+          "Analyzing requirements, user stories and epics.",
+          "Design and data modeling.",
+          "Development and document web applications, REST APIs and Microservices for enterprise and customer solutions."
         ]
       },
       {
@@ -37,87 +77,187 @@
         "dateStart": "Ene. 2021",
         "dateEnd": "Ene. 2022",
         "stack": [
-          ".NET Framework",
-          "ASP.NET MVC 5",
-          "C#",
-          "SQL Server",
-          "JavaScript",
-          "JQuery",
-          "Git"
+          {
+            "name": ".NET Framework",
+            "icon": "DiDotnet",
+            "color": "purple.400"
+          },
+          {
+            "name": "ASP.NET MVC 5",
+            "icon": "DiDotnet",
+            "color": "white.400"
+          },
+          {
+            "name": "C#",
+            "icon": "DiDotnet",
+            "color": "purple.400"
+          },
+          {
+            "name": "SQL Server",
+            "icon": "DiMsqlServer",
+            "color": "red.400"
+          },
+          {
+            "name": "MySQL",
+            "icon": "DiMysql",
+            "color": "orange.400"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "DiJsBadge",
+            "color": "yellow.400"
+          },
+          {
+            "name": "JQuery",
+            "icon": "DiJqueryLogo",
+            "color": "blue.400"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "DiBootstrap",
+            "color": "purple.400"
+          },
+          {
+            "name": "Git",
+            "icon": "DiGit",
+            "color": "orange.400"
+          },
+          {
+            "name": "Bitbucket",
+            "icon": "DiBitbucket",
+            "color": "blue.400"
+          }
         ],
         "responsabilities": [
-          "Requirements capture and analysis",
-          "Design and data modeling",
-          "Develop and document ERP web applications"
+          "Requirements capture and analysis.",
+          "Design and data modeling.",
+          "Development and document ERP web applications.",
+          "REST APIs and Microservices Development."
         ]
       }
     ],
     "hardSkills": [
       {
         "id": 1,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/nodejs.svg",
         "name": "Node.js",
-        "icon": "DiNodejs"
+        "icon": "DiNodejsSmall",
+        "color": "green.400"
       },
       {
         "id": 2,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/javascript.svg",
         "name": "JavaScript",
-        "icon": "DiNodejs"
+        "icon": "DiJsBadge",
+        "color": "yellow.400"
       },
       {
         "id": 3,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/typescript.svg",
         "name": "TypeScript",
-        "icon": "DiNodejs"
+        "icon": "DiJsBadge",
+        "color": "blue.400"
       },
       {
         "id": 4,
-        "img": "../../assets/img/icons/angular.svg",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/angular.svg",
         "name": "Angular",
-        "icon": "DiNodejs"
+        "icon": "DiAngularSimple",
+        "color": "red.400"
       },
       {
         "id": 5,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/react.svg",
         "name": "React.js",
-        "icon": "DiNodejs"
+        "icon": "DiReact",
+        "color": "blue.400"
       },
       {
         "id": 6,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/dotnet.svg",
         "name": ".NET Framework",
-        "icon": "DiNodejs"
+        "icon": "DiDotnet",
+        "color": "purple.400"
       },
       {
         "id": 7,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/csharp.svg",
         "name": "C#",
-        "icon": "DiNodejs"
+        "icon": "DiDotnet",
+        "color": "purple.400"
       },
       {
         "id": 8,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/sql.svg",
         "name": "SQL Server",
-        "icon": "DiNodejs"
+        "icon": "DiMsqlServer",
+        "color": "red.400"
       },
       {
         "id": 9,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/mysql.svg",
         "name": "MySQL",
-        "icon": "DiNodejs"
+        "icon": "DiMysql",
+        "color": "orange.400"
       },
       {
         "id": 10,
-        "img": "angu",
-        "name": "Postgre",
-        "icon": "DiNodejs"
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/postgresql.svg",
+        "name": "Postgres",
+        "icon": "DiPostgresql",
+        "color": "blue.400"
       },
       {
         "id": 11,
-        "img": "angu",
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/mongodb.svg",
         "name": "Mongodb",
-        "icon": "DiNodejs"
+        "icon": "DiMongodb",
+        "color": "green.400"
+      },
+      {
+        "id": 12,
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/git.svg",
+        "name": "Git",
+        "icon": "DiGit",
+        "color": "orange.400"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/nodejs.svg",
+        "name": "Candidates",
+        "description": "DiNodejsSmall",
+        "stack": [
+          "Angular", "Node.js", "SQL Server"
+        ]
+      },
+      {
+        "id": 2,
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/nodejs.svg",
+        "name": "Apictionary",
+        "description": "DiNodejsSmall",
+        "stack": [
+          "React.js", "Node.js", "SQL Server"
+        ]
+      },
+      {
+        "id": 3,
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/nodejs.svg",
+        "name": "Context Inscriptions",
+        "description": "DiNodejsSmall",
+        "stack": [
+          "Angular", "Node.js", "SQL Server"
+        ]
+      },
+      {
+        "id": 4,
+        "img": "https://raw.githubusercontent.com/ruizalonso/portfolio/32dd12d9ce42868bd704bbf8c4287a10dcfe97aa/src/assets/img/icons/nodejs.svg",
+        "name": "Financial ERP",
+        "description": "DiNodejsSmall",
+        "stack": [
+          "ASP.NET MVC 5", "C#", "SQL Server"
+        ]
       }
     ],
     "softSkills": [
