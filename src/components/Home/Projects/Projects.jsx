@@ -12,39 +12,21 @@ import {
   Divider,
   SimpleGrid,
   Flex,
+  Box,
+  Badge,
 } from '@chakra-ui/react'
 import { appContext } from '../../../App/AppContext'
+import { SocialButton } from '../../Shared/SocialMedia/SocialMedia'
+import { FaGithub } from 'react-icons/fa'
 
 export default function Projects() {
-  const { projects } = appContext()
+  const { projects, hardSkills } = appContext()
 
   let [Projects, setProjects] = useState(projects)
   let [Stacks, setStacks] = useState([])
-  // let [StackColor, setStackColor] = useState('')
 
-  const StackProject = (d) => {
-    setStacks(d)
-    Stacks.map((e, i) => {
-      return (
-        <Flex>
-          <Text
-            color={'green.500'}
-            key={e}
-            fontWeight={600}
-            fontSize={'12px'}
-            letterSpacing={1}
-            pt={2}
-            mx={1}
-          >
-            {e}
-          </Text>
-        </Flex>
-      )
-    })
-  }
-
-  const Project = () => 
-    Projects.map(({ id, img, name, description, stack }) => {
+  const Project = () =>
+    Projects.map(({ id, img, name, description, stack, github }) => {
       return (
         <Card
           key={name}
@@ -54,9 +36,20 @@ export default function Projects() {
           bg={useColorModeValue('gray', 'rgba(0, 0, 0, 0.30)')}
         >
           <CardBody>
-            <Image src={img} alt={name} borderRadius="lg" />
+            <Box align={'center'}>
+              <Image src={img} alt={name} boxSize="100px" objectFit="cover" />
+            </Box>
             <Stack mt="6" spacing="3" textColor={'gray.200'}>
-              <Heading size="md">{name}</Heading>
+              <Heading size="md">
+                <Flex align={'center'}>
+                  <Text pr={2}>{name}</Text>
+                  {github && (
+                    <SocialButton label={'Github'} href={github}>
+                      <FaGithub />
+                    </SocialButton>
+                  )}
+                </Flex>
+              </Heading>
               <Text>{description}</Text>
               <Stack align={'center'} justify={'center'}>
                 <Text fontSize={'2xl'} fontWeight={800}></Text>
@@ -66,27 +59,19 @@ export default function Projects() {
           </CardBody>
           <Divider />
           <CardFooter>
-            {stack.map((item, i) => (
+            {stack.map(({ name, color }, i) => (
               <Flex key={i}>
-                <Text
-                  // color={() => setStackColor(StackColor)}
-                  fontWeight={600}
-                  fontSize={'12px'}
-                  letterSpacing={1}
-                  pt={2}
-                  mx={1}
-                >
-                  {item}
-                </Text>
+                <Badge mx={1} colorScheme={color.split('.')[0]}>
+                  {name}
+                </Badge>
               </Flex>
             ))}
-            {/* <StackProject d={stack}> </StackProject> */}
           </CardFooter>
         </Card>
       )
     })
   return (
-    <Container maxW="6xl" py={{ base: 20, md: 12 }}>
+    <Container maxW="6xl" py={12} id='Projects'>
       <Text
         mb={'36px'}
         fontWeight="bold"
@@ -102,6 +87,12 @@ export default function Projects() {
         >
           <Project />
         </SimpleGrid>
+        <Text align={'center'}>
+          <small>
+            *Due to company copyrights, the source code of some projects cannot
+            be shared.
+          </small>
+        </Text>
       </Stack>
     </Container>
   )

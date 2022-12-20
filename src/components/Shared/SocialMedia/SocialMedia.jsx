@@ -5,6 +5,7 @@ import {
   Stack,
 } from '@chakra-ui/react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { appContext } from '../../../App/AppContext'
 
 export const SocialButton = ({ children, label, href }) => {
   return (
@@ -23,6 +24,7 @@ export const SocialButton = ({ children, label, href }) => {
       _hover={{
         bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
       }}
+      target={'_blank'}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
@@ -31,12 +33,14 @@ export const SocialButton = ({ children, label, href }) => {
 }
 
 export const SocialMedia = () => {
+  const { contact } = appContext()
+  const { github, linkedin } = contact
   return (
     <Stack direction={'row'} spacing={6}>
-      <SocialButton label={'Github'} href={'#'}>
+      <SocialButton label={'Github'} href={github.url}>
         <FaGithub />
       </SocialButton>
-      <SocialButton label={'Linkedin'} href={'#'}>
+      <SocialButton label={'Linkedin'} href={linkedin.url}>
         <FaLinkedin />
       </SocialButton>
     </Stack>

@@ -11,9 +11,9 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { SocialMedia } from '../SocialMedia/SocialMedia'
-import logo from '../../../assets/img/logo/logo-2.png'
+import logo from '../../../assets/img/logo/logo-dev.png'
 
-const Links = ['Home', 'Skills', 'Projects']
+const Links = ['Experience', 'Skills', 'Projects']
 const NavLink = ({ children }) => (
   <Link
     px={2}
@@ -23,7 +23,7 @@ const NavLink = ({ children }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={'#'}
+    href={`#${children}`}
   >
     {children}
   </Link>

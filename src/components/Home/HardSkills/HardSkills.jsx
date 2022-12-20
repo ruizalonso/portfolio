@@ -1,12 +1,10 @@
 import {
   Box,
   Text,
-  Stack,
   Image,
   SimpleGrid,
   Container,
   Flex,
-  Badge,
 } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { appContext } from '../../../App/AppContext'
@@ -33,7 +31,7 @@ const HardSkills = () => {
       </Box>
     ))
   return (
-    <Container maxW="6xl" py={{ base: 20, md: 12 }}>
+    <Container maxW="6xl" py={12} id='Skills'>
       <Text
         mb={'36px'}
         fontWeight="bold"

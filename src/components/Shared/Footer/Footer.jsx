@@ -7,7 +7,7 @@ import {
   Text,
   Image,
 } from '@chakra-ui/react'
-import logo from '../../../assets/img/logo/logo-3.png'
+import logo from '../../../assets/img/logo/logo-dev.png'
 import { SocialMedia } from '../SocialMedia/SocialMedia'
 
 export const Footer = () => {

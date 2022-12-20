@@ -11,7 +11,6 @@ import {
   Divider,
   ListIcon,
   UnorderedList,
-  Box,
 } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { FaLaptopCode } from 'react-icons/fa'
@@ -98,7 +97,6 @@ const Experience = () => {
         break
     }
   }
-  // console.log(exp())
   const Experience = () =>
     Experiences.map(({ rol, responsabilities, stack }, i) => {
       return (
@@ -121,7 +119,7 @@ const Experience = () => {
                 <FaLaptopCode />
               </Text>
               <Stack>
-                <Text fontSize={'2xl'} fontWeight={800}>
+                <Text fontSize={'2xl'} fontWeight={700}>
                   {rol}
                 </Text>
                 <br />
@@ -159,7 +157,7 @@ const Experience = () => {
       )
     })
   return (
-    <Container maxW="6xl" alignItems={'center'} py={{ base: 20, md: 12 }}>
+    <Container maxW="6xl" alignItems={'center'} py={12} id='Experience'>
       <Text
         mb={'36px'}
         fontWeight="bold"
