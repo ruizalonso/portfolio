@@ -20,10 +20,9 @@ import { SocialButton } from '../../Shared/SocialMedia/SocialMedia'
 import { FaGithub } from 'react-icons/fa'
 
 export default function Projects() {
-  const { projects, hardSkills } = appContext()
+  const { projects } = appContext()
 
   let [Projects, setProjects] = useState(projects)
-  let [Stacks, setStacks] = useState([])
 
   const Project = () =>
     Projects.map(({ id, img, name, description, stack, github }) => {
@@ -33,13 +32,13 @@ export default function Projects() {
           variant="elevated"
           maxW="sm"
           boxShadow={'2xl'}
-          bg={useColorModeValue('gray', 'rgba(0, 0, 0, 0.30)')}
+          bg={'rgba(0, 0, 0, 0.30)'}
         >
           <CardBody>
             <Box align={'center'}>
               <Image src={img} alt={name} boxSize="100px" objectFit="cover" />
             </Box>
-            <Stack mt="6" spacing="3" textColor={'gray.200'}>
+            <Stack mt="6" spacing="3" textColor={'gray.50'}>
               <Heading size="md">
                 <Flex align={'center'}>
                   <Text pr={2}>{name}</Text>
@@ -61,7 +60,7 @@ export default function Projects() {
           <CardFooter>
             {stack.map(({ name, color }, i) => (
               <Flex key={i}>
-                <Badge mx={1} colorScheme={color.split('.')[0]}>
+                <Badge mx={1} variant='outline' colorScheme={color.split('.')[0]}>
                   {name}
                 </Badge>
               </Flex>
@@ -77,6 +76,7 @@ export default function Projects() {
         fontWeight="bold"
         fontSize={{ base: '28px', md: '4xl' }}
         textAlign={'center'}
+        color={'gray.50'}
       >
         Projects
       </Text>
@@ -87,7 +87,7 @@ export default function Projects() {
         >
           <Project />
         </SimpleGrid>
-        <Text align={'center'}>
+        <Text align={'center'} color={'gray.50'}>
           <small>
             *Due to company copyrights, the source code of some projects cannot
             be shared.

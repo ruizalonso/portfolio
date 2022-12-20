@@ -21,19 +21,24 @@ export const Footer = () => {
         _before={{
           content: '""',
           borderBottom: '1px solid',
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: 'gray.700',
           flexGrow: 1,
           mr: 8,
         }}
         _after={{
           content: '""',
           borderBottom: '1px solid',
-          borderColor: useColorModeValue('gray.200', 'gray.700'),
+          borderColor: 'gray.700',
           flexGrow: 1,
           ml: 8,
         }}
       >
-        <Image boxSize="50px" objectFit="cover" src={logo} alt="Mr. X" />
+        <Image
+          boxSize="50px"
+          objectFit="cover"
+          src={logo}
+          alt="Jhonatan Ruiz"
+        />
       </Flex>
       <Container
         as={Stack}
@@ -44,7 +49,7 @@ export const Footer = () => {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Text>Made with ❤️ by. Jhonatan Ruiz</Text>
+        <Text color={'gray.50'}>Made with ❤️ by. Jhonatan Ruiz</Text>
         <SocialMedia />
       </Container>
     </Box>

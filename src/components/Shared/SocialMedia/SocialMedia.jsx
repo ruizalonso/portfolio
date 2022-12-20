@@ -10,7 +10,8 @@ import { appContext } from '../../../App/AppContext'
 export const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      bg={'whiteAlpha.100'}
+      color={'gray.50'}
       rounded={'full'}
       w={8}
       h={8}
@@ -22,7 +23,7 @@ export const SocialButton = ({ children, label, href }) => {
       justifyContent={'center'}
       transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+        bg: 'whiteAlpha.400',
       }}
       target={'_blank'}
     >

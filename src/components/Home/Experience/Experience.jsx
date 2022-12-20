@@ -105,7 +105,8 @@ const Experience = () => {
           variant="elevated"
           boxShadow={'2xl'}
           maxW="sm"
-          bg={useColorModeValue('white', 'rgba(255, 255, 255, 0.08)')}
+          bg={'rgba(255, 255, 255, 0.08)'}
+          color={'gray.50'}
         >
           <CardBody>
             <Stack align={'center'} textAlign={'center'}>
@@ -129,7 +130,6 @@ const Experience = () => {
                       <ListItem
                         textAlign={'start'}
                         key={e}
-                        color={'gray.50'}
                         ml={6}
                       >
                         {e}
@@ -163,6 +163,7 @@ const Experience = () => {
         fontWeight="bold"
         fontSize={{ base: '28px', md: '4xl' }}
         textAlign={'center'}
+        color={'gray.50'}
       >
         Experience
       </Text>

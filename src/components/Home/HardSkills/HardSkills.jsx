@@ -37,6 +37,7 @@ const HardSkills = () => {
         fontWeight="bold"
         fontSize={{ base: '28px', md: '4xl' }}
         textAlign={'center'}
+        color={'gray.50'}
       >
         Skills
       </Text>
