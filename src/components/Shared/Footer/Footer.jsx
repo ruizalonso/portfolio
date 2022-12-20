@@ -7,10 +7,11 @@ import {
   Text,
   Image,
 } from '@chakra-ui/react'
-import logo from '../../../assets/img/logo/logo-dev.png'
 import { SocialMedia } from '../SocialMedia/SocialMedia'
 
 export const Footer = () => {
+  const logo =
+    'https://raw.githubusercontent.com/ruizalonso/portfolio/master/src/assets/img/logo/logo-dev.png'
   return (
     <Box
       py={10}

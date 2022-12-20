@@ -11,20 +11,19 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { SocialMedia } from '../SocialMedia/SocialMedia'
-import logo from '../../../assets/img/logo/logo-dev.png'
 
 const Links = ['Experience', 'Skills', 'Projects']
 const NavLink = ({ children }) => (
   <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    color={'gray.50'}
-    _hover={{
-      textDecoration: 'none',
-      bg: 'gray.700',
-    }}
-    href={`#${children}`}
+  px={2}
+  py={1}
+  rounded={'md'}
+  color={'gray.50'}
+  _hover={{
+    textDecoration: 'none',
+    bg: 'gray.700',
+  }}
+  href={`#${children}`}
   >
     {children}
   </Link>
@@ -32,7 +31,8 @@ const NavLink = ({ children }) => (
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  const logo = 'https://raw.githubusercontent.com/ruizalonso/portfolio/master/src/assets/img/logo/logo-dev.png'
+  
   return (
     <>
       <Box bg={'gray.900'} px={4}>
@@ -44,6 +44,7 @@ export default function Navbar() {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
             color={'gray.50'}
+            bg={'gray.900'}
           />
           <HStack spacing={8} alignItems={'center'}>
             <Image
