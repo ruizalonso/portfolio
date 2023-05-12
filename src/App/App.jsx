@@ -10,7 +10,7 @@ function App() {
   if (loading)
     return (
       <Center>
-        <Spinner />
+        <Spinner mt={6} />
       </Center>
     )
 

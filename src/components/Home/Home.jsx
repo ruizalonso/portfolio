@@ -1,9 +1,4 @@
-import {
-  Box,
-  Heading,
-  Text,
-  Stack,
-} from '@chakra-ui/react'
+import { Box, Heading, Text, Stack, Center } from '@chakra-ui/react'
 import React from 'react'
 import { appContext } from '../../App/AppContext'
 import HardSkills from '../Home/HardSkills/HardSkills'
@@ -11,7 +6,6 @@ import Experience from '../Home/Experience/Experience'
 import Projects from '../Home/Projects/Projects'
 
 const Home = () => {
-
   const { profileData } = appContext()
   return (
     <Box px={4} bgGradient="linear(gray.900 0%, gray.800 25%, purple.900 80%)">
@@ -26,19 +20,31 @@ const Home = () => {
           fontSize={{ base: '6xl', md: '96px' }}
           lineHeight={'110%'}
         >
-          <Text as={'b'} color={'gray.50'}>Backend & Full Stack </Text>
+          <Text as={'b'} color={'gray.50'}>
+            {' '}
+            Full Stack{' '}
+          </Text>
           <Text as={'b'} color={'purple.400'}>
             Developer
           </Text>
         </Heading>
-        <Text as="b" color={'gray.50'} fontSize={{ base: '3xl', md: '5xl' }}>
+        <Text
+          as="strong"
+          color={'gray.50'}
+          fontSize={{ base: '3xl', md: '5xl' }}
+        >
           Hi, I’m {profileData.name}. Nice to meet you.
         </Text>
-        <Text color={'gray.50'} fontSize={{ base: '20px', md: '2xl' }}>
-          {profileData.description}
-          <br />
-          {profileData.complement}
-        </Text>
+        <Center>
+          <Text
+            width={'50ch'}
+            color={'gray.50'}
+            fontSize={{ base: '20px', md: '2xl' }}
+            lineHeight={'1.7rem'}
+          >
+            {profileData.description}
+          </Text>
+        </Center>
       </Stack>
       <Experience />
       <HardSkills />

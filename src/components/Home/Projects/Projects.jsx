@@ -56,7 +56,7 @@ export default function Projects() {
               </Stack>
             </Stack>
           </CardBody>
-          <Divider />
+          <Divider size={'sm'} colorScheme={'gray.700'} />
           <CardFooter>
             {stack.map(({ name, color }, i) => (
               <Flex key={i}>
